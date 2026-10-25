@@ -1,0 +1,1009 @@
+{
+  "metadata": {
+    "slug": "pinned-docs-pitch",
+    "title": "Pinned Docs, Cited Answers",
+    "topic": "FINAL PROJECT · PITCH",
+    "skill": "show-tell",
+    "style_preset": "show-tell",
+    "channel": "priyesh-modi",
+    "channel_title": "Priyesh Modi",
+    "persona": "Priyesh Modi (synthetic Kokoro voice, own script)",
+    "voice": "am_onyx",
+    "voice_kokoro": "am_onyx",
+    "engine": "kokoro",
+    "clock": "narration",
+    "palette": "claude",
+    "register": "Plain",
+    "fps": 24,
+    "aspect_ratio": "16:9",
+    "width": 3840,
+    "height": 2160,
+    "caption_policy": "none",
+    "greeting_language": "Hindi (Namaste)",
+    "bookend_exempt": [
+      "cold-open",
+      "bvdt",
+      "bhtf"
+    ],
+    "bookend_exempt_reason": "A pitch, not a lesson: it opens on the hesitant writer and the terms card, has no verdict card, and has no viewer exercise (Your Turn). The spoken outro is kept, but on the author's own drawn card, because ClaudeTitleOutro hardcodes the instructor's handle.",
+    "audience": "coders checking what changed between library versions; course reviewers judging the pitch",
+    "source_doc": "PROJECT-BRIEF.md; Pydantic v2.14.1 docs snapshot (commit b2212c787fb5, cloned 2026-10-24)",
+    "playlist": "INFO 7375 Final Project",
+    "chapter_number": 0,
+    "tags": [
+      "INFO 7375",
+      "final project",
+      "pitch",
+      "Pydantic",
+      "RAG",
+      "evaluation",
+      "citations"
+    ],
+    "build": {
+      "at": "2026-10-24T21:45:36",
+      "cut": "master",
+      "filled": 20,
+      "of": 20,
+      "slates": [],
+      "skin_warnings": [
+        "BIDEA: palette=claude but the cold open is 'BrutalistHesitantWriter' — COLD OPEN LAW wants ClaudeComposerAsk",
+        "BOUT: palette=claude but the outro is 'un-annotated' — OUTRO LAW wants ClaudeTitleOutro"
+      ]
+    }
+  },
+  "beats": [
+    {
+      "beat_id": "BIDEA",
+      "act": "bookend",
+      "lane": "bookend",
+      "proof_gate": "SHOW",
+      "narration_text": "Namaste. I'm Priyesh Modi. This voice is synthetic, reading a script I wrote. This is the pitch for my final project. Almost none of it is built yet, and I'll say exactly which part is.",
+      "estimated_duration_s": 14.0,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "Bookend content appears and settles"
+          }
+        ],
+        "remotion": {
+          "pattern": "BrutalistHesitantWriter",
+          "props": {
+            "text": "Ask a chatbot\nwhat changed in v2",
+            "triggerWords": "a chatbot",
+            "replacementWords": "the pinned docs",
+            "fontSize": 84,
+            "charMs": 22,
+            "hesitateBetween": 6,
+            "hesitateWithin": 1,
+            "mistakeRate": 2,
+            "jitter": 20,
+            "seed": "pinned-docs-pitch",
+            "banner": ""
+          }
+        }
+      },
+      "lead_silence_s": 0.8,
+      "motion_claim": "The writer types 'Ask a chatbot what changed in v2' and corrects it to 'Ask the pinned docs'.",
+      "audio_file": "mp3/beat-BIDEA.mp3",
+      "actual_duration_s": 11.723,
+      "render_duration_s": 11.75,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BIDEA.mp4",
+        "filled_by": "media",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "BDEFS",
+      "act": "bookend",
+      "lane": "bookend",
+      "proof_gate": "SHOW",
+      "narration_text": "Four terms. A snapshot: a frozen, dated copy of one version's docs. A citation: the exact sentence an answer quotes, and where it's from. A refusal: saying the docs don't cover it, instead of guessing. An eval set: questions with known answers, used to score the agent.",
+      "estimated_duration_s": 18.8,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "show": [
+          {
+            "at": 0.1,
+            "event": "Bookend content appears and settles"
+          }
+        ],
+        "remotion": {
+          "pattern": "ClaudeDefinitions",
+          "props": {
+            "title": "Terms In This Film",
+            "terms": [
+              {
+                "term": "Snapshot",
+                "meaning": "a frozen, dated copy of one version's docs"
+              },
+              {
+                "term": "Citation",
+                "meaning": "the exact line it quotes, and where it's from"
+              },
+              {
+                "term": "Refusal",
+                "meaning": "saying the docs don't hold it, instead of guessing"
+              },
+              {
+                "term": "Eval set",
+                "meaning": "test questions with checked replies, to grade it"
+              }
+            ],
+            "folderLabel": "",
+            "dark": true,
+            "durationSeconds": 15.232
+          }
+        }
+      },
+      "audio_file": "mp3/beat-BDEFS.mp3",
+      "actual_duration_s": 15.232,
+      "render_duration_s": 15.25,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/BDEFS.mp4",
+        "filled_by": "media",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B00",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "In one sentence: it's an agent that answers coding questions from a library's official docs, pinned to the exact version you're using, and checks its own answers. Every answer will quote the section it came from. When the docs don't cover a question, it will refuse.",
+      "estimated_duration_s": 18.4,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "The crate lid lifts to reveal the docs inside; an answer slip lands beside it.",
+        "motion_claim": "The crate lid lifts to reveal the docs inside; an answer slip lands beside it.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "Pinned docs prop establishes"
+          },
+          {
+            "at": 0.3,
+            "event": "The crate lid lifts to reveal the docs inside; an answer slip lands beside it."
+          }
+        ],
+        "manim": {
+          "class": "B00_Prop"
+        },
+        "prop_id": "context-crate"
+      },
+      "audio_file": "mp3/beat-B00.mp3",
+      "actual_duration_s": 14.251,
+      "render_duration_s": 14.291666666666666,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B00.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B01",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "When it's done, it will be a public GitHub repository with a command-line agent, a snapshot loader for any docs repo at a version tag, a citation checker, and an eval log. Pydantic is the first library I'll test it on.",
+      "estimated_duration_s": 16.4,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "The delivery parcel opens; its packing slip is the list of parts.",
+        "motion_claim": "The delivery parcel opens; its packing slip is the list of parts.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "When done prop establishes"
+          },
+          {
+            "at": 0.3,
+            "event": "The delivery parcel opens; its packing slip is the list of parts."
+          }
+        ],
+        "manim": {
+          "class": "B01_Prop"
+        },
+        "prop_id": "release-parcel"
+      },
+      "audio_file": "mp3/beat-B01.mp3",
+      "actual_duration_s": 12.949,
+      "render_duration_s": 12.958333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B01.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B02",
+      "act": "show-tell",
+      "lane": "card",
+      "proof_gate": "SHOW",
+      "narration_text": "Why care? Coding assistants answer from training data that can be a version behind. In Pydantic, version two's migration guide renames the method that turns a model into a dictionary to model dump. An assistant can hand you the old name, and sound just as sure.",
+      "estimated_duration_s": 18.4,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "why_card": "The claim is a real table row (migration.md:142); the lens landing on dict() -> model_dump() is the claim.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "visual_intent": "A lens settles on the real migration-guide row: dict() becomes model_dump().",
+        "motion_claim": "A lens settles on the real migration-guide row: dict() becomes model_dump().",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "real rows land"
+          },
+          {
+            "at": 0.63,
+            "event": "lens settles on the claim"
+          }
+        ],
+        "remotion": {
+          "pattern": "ShowTellCard",
+          "props": {
+            "kind": "focus",
+            "heading": "Real · docs/migration.md · v2.14.1",
+            "items": [
+              {
+                "label": "construct()",
+                "value": "model_construct()"
+              },
+              {
+                "label": "copy()",
+                "value": "model_copy()"
+              },
+              {
+                "label": "dict()",
+                "value": "model_dump()"
+              },
+              {
+                "label": "json()",
+                "value": "model_dump_json()"
+              },
+              {
+                "label": "parse_obj()",
+                "value": "model_validate()"
+              }
+            ],
+            "focus": 2,
+            "cues": [
+              0.56,
+              0.63
+            ],
+            "onTwos": true,
+            "durationSeconds": 14.912
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B02.mp3",
+      "actual_duration_s": 14.912,
+      "render_duration_s": 14.916666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B02.mp4",
+        "filled_by": "media",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B03",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "I compared two alternatives, GitHub Copilot and Cursor. Both answer fast, inside the editor, but neither told me which version an answer was for, or quoted the official docs. Mine will answer, quote, and check itself, for a version you name.",
+      "estimated_duration_s": 16.4,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "A packet takes one of two routes: the two alternatives.",
+        "motion_claim": "A packet takes one of two routes: the two alternatives.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "Alternatives prop establishes"
+          },
+          {
+            "at": 0.3,
+            "event": "A packet takes one of two routes: the two alternatives."
+          }
+        ],
+        "manim": {
+          "class": "B03_Prop"
+        },
+        "prop_id": "branch-junction"
+      },
+      "audio_file": "mp3/beat-B03.mp3",
+      "actual_duration_s": 13.653,
+      "render_duration_s": 13.666666666666666,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B03.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B04",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "Who opens it? A coder who wants to know what changed between versions. In the first minute, they run one command, and read the results table at the top of the read me.",
+      "estimated_duration_s": 13.2,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "A tool block slides up to the workstation; the reader's first run.",
+        "motion_claim": "A tool block slides up to the workstation; the reader's first run.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "First minute prop establishes"
+          },
+          {
+            "at": 0.3,
+            "event": "A tool block slides up to the workstation; the reader's first run."
+          }
+        ],
+        "manim": {
+          "class": "B04_Prop"
+        },
+        "prop_id": "agent-workstation"
+      },
+      "audio_file": "mp3/beat-B04.mp3",
+      "actual_duration_s": 9.429,
+      "render_duration_s": 9.458333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B04.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B05",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "Here's how it will work. It reads your version from your requirements file, pulls the matching sections from that version's snapshot, and answers only from those.",
+      "estimated_duration_s": 10.4,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "One page is pulled from the stack of docs pages.",
+        "motion_claim": "One page is pulled from the stack of docs pages.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "Retrieve prop establishes"
+          },
+          {
+            "at": 0.3,
+            "event": "One page is pulled from the stack of docs pages."
+          }
+        ],
+        "manim": {
+          "class": "B05_Prop"
+        },
+        "prop_id": "skill-stack"
+      },
+      "audio_file": "mp3/beat-B05.mp3",
+      "actual_duration_s": 8.768,
+      "render_duration_s": 8.791666666666666,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B05.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B06",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "Then a check that doesn't trust the model. Every quote has to appear, word for word, in the section it cites. If it doesn't, the answer fails.",
+      "estimated_duration_s": 10.8,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "The answer parcel moves through the inspection arch.",
+        "motion_claim": "The answer parcel moves through the inspection arch.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "Check quotes prop establishes"
+          },
+          {
+            "at": 0.3,
+            "event": "The answer parcel moves through the inspection arch."
+          }
+        ],
+        "manim": {
+          "class": "B06_Prop"
+        },
+        "prop_id": "checkpoint-scanner"
+      },
+      "audio_file": "mp3/beat-B06.mp3",
+      "actual_duration_s": 7.765,
+      "render_duration_s": 7.791666666666667,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B06.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B07",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "And if the answer includes code, it will run that code in a fresh environment with only your version installed. An error or a deprecation warning means the answer was wrong, with no judgment call needed.",
+      "estimated_duration_s": 14.4,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "A test sample is placed into the fixture: the code runs.",
+        "motion_claim": "A test sample is placed into the fixture: the code runs.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "Run the code prop establishes"
+          },
+          {
+            "at": 0.3,
+            "event": "A test sample is placed into the fixture: the code runs."
+          }
+        ],
+        "manim": {
+          "class": "B07_Prop"
+        },
+        "prop_id": "experiment-bench"
+      },
+      "audio_file": "mp3/beat-B07.mp3",
+      "actual_duration_s": 11.691,
+      "render_duration_s": 11.708333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B07.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B08",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "If nothing in the snapshot matches well enough, the agent stops and says so. A refusal can be the right answer, and the eval will score it that way.",
+      "estimated_duration_s": 11.6,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "The barrier comes down: nothing passes without support.",
+        "motion_claim": "The barrier comes down: nothing passes without support.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "Refuse prop establishes"
+          },
+          {
+            "at": 0.3,
+            "event": "The barrier comes down: nothing passes without support."
+          }
+        ],
+        "manim": {
+          "class": "B08_Prop"
+        },
+        "prop_id": "permission-gate"
+      },
+      "audio_file": "mp3/beat-B08.mp3",
+      "actual_duration_s": 8.64,
+      "render_duration_s": 8.666666666666666,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B08.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B09",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "The headline result will be a comparison. The same questions go to a plain model with no docs, and to my agent. The table shows, side by side, how often each gave failing code, or quotes that don't exist.",
+      "estimated_duration_s": 15.6,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "Two trays: a plain model and the pinned agent; one sample lifts out to compare.",
+        "motion_claim": "Two trays: a plain model and the pinned agent; one sample lifts out to compare.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "Compared prop establishes"
+          },
+          {
+            "at": 0.3,
+            "event": "Two trays: a plain model and the pinned agent; one sample lifts out to compare."
+          }
+        ],
+        "manim": {
+          "class": "B09_Prop"
+        },
+        "prop_id": "comparison-trays"
+      },
+      "audio_file": "mp3/beat-B09.mp3",
+      "actual_duration_s": 12.075,
+      "render_duration_s": 12.083333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B09.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B10",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "What would it prove about me, for roles building with language models? Four things this course teaches: source grounding, a prompt contract, verification, and evaluation. The evidence will be the dated eval log and that table, not my word.",
+      "estimated_duration_s": 15.6,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "The binder cover lifts on the records: the eval log.",
+        "motion_claim": "The binder cover lifts on the records: the eval log.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "What it proves prop establishes"
+          },
+          {
+            "at": 0.3,
+            "event": "The binder cover lifts on the records: the eval log."
+          }
+        ],
+        "manim": {
+          "class": "B10_Prop"
+        },
+        "prop_id": "evidence-binder"
+      },
+      "audio_file": "mp3/beat-B10.mp3",
+      "actual_duration_s": 13.355,
+      "render_duration_s": 13.375,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B10.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B11",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "What's out? It won't write your project, and it won't read live web pages, only dated, versioned snapshots. A second library comes next, if there's time.",
+      "estimated_duration_s": 10.4,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "One token is taken from a small, finite tray: the narrow scope.",
+        "motion_claim": "One token is taken from a small, finite tray: the narrow scope.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "Out prop establishes"
+          },
+          {
+            "at": 0.3,
+            "event": "One token is taken from a small, finite tray: the narrow scope."
+          }
+        ],
+        "manim": {
+          "class": "B11_Prop"
+        },
+        "prop_id": "budget-slots"
+      },
+      "audio_file": "mp3/beat-B11.mp3",
+      "actual_duration_s": 9.195,
+      "render_duration_s": 9.208333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B11.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B12",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "What comes first is the quote checker, run on a few answers I write by hand, some with broken quotes on purpose. You'll know it ran when the log has a dated row showing whether it caught every broken one.",
+      "estimated_duration_s": 16.0,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "Evidence slides onto the review desk: the first check.",
+        "motion_claim": "Evidence slides onto the review desk: the first check.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "First prop establishes"
+          },
+          {
+            "at": 0.3,
+            "event": "Evidence slides onto the review desk: the first check."
+          }
+        ],
+        "manim": {
+          "class": "B12_Prop"
+        },
+        "prop_id": "review-desk"
+      },
+      "audio_file": "mp3/beat-B12.mp3",
+      "actual_duration_s": 11.413,
+      "render_duration_s": 11.416666666666666,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B12.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B13",
+      "act": "show-tell",
+      "lane": "card",
+      "proof_gate": "SHOW",
+      "narration_text": "What exists today is one thing. On October twenty-fourth, I cloned the Pydantic repository at release two point fourteen point one. Its docs folder holds ninety-one pages. That's the first snapshot. Everything else in this film is a plan.",
+      "estimated_duration_s": 15.6,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "why_card": "The one thing that exists, shown as its real record (git rev-parse, find | wc -l), not as a drawing.",
+      "shot": {
+        "type": "REMOTION",
+        "source": "own",
+        "visual_intent": "A lens settles on the snapshot's real record: 91 docs pages.",
+        "motion_claim": "A lens settles on the snapshot's real record: 91 docs pages.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "real rows land"
+          },
+          {
+            "at": 0.637,
+            "event": "lens settles on the claim"
+          }
+        ],
+        "remotion": {
+          "pattern": "ShowTellCard",
+          "props": {
+            "kind": "focus",
+            "heading": "Real · my snapshot · 2026-10-24",
+            "items": [
+              {
+                "label": "Source",
+                "value": "pydantic/pydantic"
+              },
+              {
+                "label": "Tag",
+                "value": "v2.14.1"
+              },
+              {
+                "label": "Commit",
+                "value": "b2212c78"
+              },
+              {
+                "label": "Docs pages",
+                "value": "91"
+              },
+              {
+                "label": "Cloned",
+                "value": "2026-10-24"
+              }
+            ],
+            "focus": 3,
+            "cues": [
+              0.352,
+              0.56,
+              0.637
+            ],
+            "onTwos": true,
+            "durationSeconds": 13.888
+          }
+        }
+      },
+      "audio_file": "mp3/beat-B13.mp3",
+      "actual_duration_s": 13.888,
+      "render_duration_s": 13.916666666666666,
+      "build": {
+        "status": "VIDEO",
+        "src": "media/B13.mp4",
+        "filled_by": "media",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B14",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "What could sink it? The questions. If I write them from my head, I may write ones my agent finds easy, and the table would mean nothing.",
+      "estimated_duration_s": 10.8,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "The inspection lamp swings down onto the evidence.",
+        "motion_claim": "The inspection lamp swings down onto the evidence.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "Risk prop establishes"
+          },
+          {
+            "at": 0.3,
+            "event": "The inspection lamp swings down onto the evidence."
+          }
+        ],
+        "manim": {
+          "class": "B14_Prop"
+        },
+        "prop_id": "inspection-lamp"
+      },
+      "audio_file": "mp3/beat-B14.mp3",
+      "actual_duration_s": 7.808,
+      "render_duration_s": 7.833333333333333,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B14.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B15",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "So the questions will come from Pydantic's changelog and migration guide, where the answers are written down, plus trap questions about functions that don't exist. How many are enough, I don't know yet. I'll start with thirty, and see if the scores hold.",
+      "estimated_duration_s": 17.2,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "The next real question is pulled from the queue.",
+        "motion_claim": "The next real question is pulled from the queue.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "The fix prop establishes"
+          },
+          {
+            "at": 0.3,
+            "event": "The next real question is pulled from the queue."
+          }
+        ],
+        "manim": {
+          "class": "B15_Prop"
+        },
+        "prop_id": "task-queue"
+      },
+      "audio_file": "mp3/beat-B15.mp3",
+      "actual_duration_s": 13.077,
+      "render_duration_s": 13.083333333333334,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B15.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "B16",
+      "act": "show-tell",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "Why this project? Mostly to learn: evaluation sets, agent loops, and prompt contracts are new to me. What I already have is Python, FastAPI, Streamlit, Supabase, and C-I C-D. My cloud course web app has a GitHub Actions pipeline that runs its tests on every pull request.",
+      "estimated_duration_s": 18.8,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "A new tool is lifted out of its dock: the skill I'm here to learn.",
+        "motion_claim": "A new tool is lifted out of its dock: the skill I'm here to learn.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "Why this prop establishes"
+          },
+          {
+            "at": 0.3,
+            "event": "A new tool is lifted out of its dock: the skill I'm here to learn."
+          }
+        ],
+        "manim": {
+          "class": "B16_Prop"
+        },
+        "prop_id": "tool-block"
+      },
+      "audio_file": "mp3/beat-B16.mp3",
+      "actual_duration_s": 16.341,
+      "render_duration_s": 16.375,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/B16.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T21:45:36"
+      }
+    },
+    {
+      "beat_id": "BOUT",
+      "act": "outro",
+      "lane": "manim",
+      "proof_gate": "SHOW",
+      "narration_text": "Pinned Docs, Cited Answers. Priyesh Modi.",
+      "estimated_duration_s": 4.0,
+      "voice": "am_onyx",
+      "engine": "kokoro",
+      "qc": {
+        "sparse_by_design": true,
+        "sparse_reason": "Show-tell: one native-vector prop and two short labels on a cream stage. Only underfill and clustering are waived; edge-bleed, empty-frame and contrast still apply."
+      },
+      "kind": "outro_voice",
+      "tail_silence_s": 1.0,
+      "shot": {
+        "type": "GRAPHIC",
+        "source": "own",
+        "visual_intent": "Title and author name; the delivery parcel closes.",
+        "motion_claim": "The title restates; the parcel lid settles; the author's name stays.",
+        "show": [
+          {
+            "at": 0.05,
+            "event": "title and name"
+          },
+          {
+            "at": 0.2,
+            "event": "lid settles"
+          }
+        ],
+        "manim": {
+          "class": "BOUT_Outro"
+        }
+      },
+      "audio_file": "mp3/beat-BOUT.mp3",
+      "actual_duration_s": 4.285,
+      "render_duration_s": 4.291666666666667,
+      "build": {
+        "status": "MANIM",
+        "src": "manim/BOUT.mp4",
+        "filled_by": "manim",
+        "at": "2026-10-24T21:45:36"
+      }
+    }
+  ]
+}

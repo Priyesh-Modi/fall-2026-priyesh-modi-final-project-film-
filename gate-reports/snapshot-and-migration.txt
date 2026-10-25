@@ -1,0 +1,32 @@
+# captured 2026-10-24 21:28 EDT from ~/INFO7375/snap/pydantic-v2.14.1
+$ git remote get-url origin
+https://github.com/pydantic/pydantic
+$ git describe --tags
+core-v2.50.1
+$ git tag --points-at HEAD
+core-v2.50.1
+v2.14.1
+$ git rev-parse HEAD
+b2212c787fb5c73386dc770681ec49cd09da8e73
+$ find docs -name "*.md" | wc -l
+91
+$ stat (clone time of docs/)
+2026-10-24 18:48
+$ sed -n 136,148p docs/migration.md
+| ----------- | ------------ |
+| `__fields__` | `model_fields` |
+| `__private_attributes__` | `__pydantic_private__` |
+| `__validators__` | `__pydantic_validator__` |
+| `construct()` | `model_construct()` |
+| `copy()` | `model_copy()` |
+| `dict()` | `model_dump()` |
+| `json_schema()` | `model_json_schema()` |
+| `json()` | `model_dump_json()` |
+| `parse_obj()` | `model_validate()` |
+| `update_forward_refs()` | `model_rebuild()` |
+
+* Some of the built-in data-loading functionality has been slated for removal. In particular,
+$ grep -n "DeprecationWarning" docs/migration.md | head -1
+133:to help ease migration, but calling them will emit `DeprecationWarning`s.
+$ grep -n "dict()" docs/migration.md | head -1
+142:| `dict()` | `model_dump()` |
